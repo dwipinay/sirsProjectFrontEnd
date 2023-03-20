@@ -193,7 +193,7 @@ export const FormUbahRL53 = () => {
         setDeskripsi(response.data.data.deskripsi);
         setPasienKeluarHidupLK(response.data.data.pasien_keluar_hidup_menurut_jeniskelamin_lk);
         setPasienKeluarHidupPR(response.data.data.pasien_keluar_hidup_menurut_jeniskelamin_pr);
-        setPasienKeluarMatiLK(response.data.data.pasien_keluar_hidup_menurut_jeniskelamin_lk);
+        setPasienKeluarMatiLK(response.data.data.pasien_keluar_mati_menurut_jeniskelamin_lk);
         setPasienKeluarMatiPR(response.data.data.pasien_keluar_mati_menurut_jeniskelamin_pr);
        // console.log(response.data.data);
     };
