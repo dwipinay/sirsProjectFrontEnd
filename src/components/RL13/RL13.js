@@ -205,24 +205,24 @@ const RL13 = () => {
                             <div className="card-body">
                                 <h5 className="card-title h5">Profile Fasyankes</h5>
                                 <div className="form-floating" style={{width:"100%", display:"inline-block"}}>
-                                    <input type="text" className="form-control" id="floatingInput"
+                                    <input type="text" className="form-control" id="namaRS"
                                         value={ namaRS } disabled={true}/>
-                                    <label htmlFor="floatingInput">Nama</label>
+                                    <label htmlFor='namaRS'>Nama</label>
                                 </div>
                                 <div className="form-floating" style={{width:"100%", display:"inline-block"}}>
-                                    <input type="text" className="form-control" id="floatingInput"
+                                    <input type="text" className="form-control" id="alamatRS"
                                         value={ alamatRS} disabled={true}/>
-                                    <label htmlFor="floatingInput">Alamat</label>
+                                    <label htmlFor="alamatRS">Alamat</label>
                                 </div>
                                 <div className="form-floating" style={{width:"50%", display:"inline-block"}}>
-                                    <input type="text" className="form-control" id="floatingInput"
+                                    <input type="text" className="form-control" id="provinsiRS"
                                         value={ namaPropinsi } disabled={true}/>
-                                    <label htmlFor="floatingInput">Provinsi </label>
+                                    <label htmlFor="provinsiRS">Provinsi </label>
                                 </div>
                                 <div className="form-floating" style={{width:"50%", display:"inline-block"}}>
-                                    <input type="text" className="form-control" id="floatingInput"
+                                    <input type="text" className="form-control" id="kabKotaRS"
                                         value= { namaKabKota } disabled={true}/>
-                                    <label htmlFor="floatingInput">Kab/Kota</label>
+                                    <label htmlFor="kabKotaRS">Kab/Kota</label>
                                 </div>
                             </div>
                         </div>
@@ -233,9 +233,9 @@ const RL13 = () => {
                                 <h5 className="card-title h5">Periode Laporan</h5>
                                 <form onSubmit={Cari}>
                                     <div className="form-floating" style={{width:"100%", display:"inline-block"}}>
-                                        <input name="tahun" type="text" className="form-control" id="floatingInput" 
+                                        <input name="tahun" type="text" className="form-control" id="tahun" 
                                             placeholder="Tahun" value={tahun} onChange={e => changeHandlerSingle(e)} disabled={false}/>
-                                        <label htmlFor="floatingInput">Tahun</label>
+                                        <label htmlFor="tahun">Tahun</label>
                                     </div>
                                     <div className="mt-3 mb-3">
                                         <button type="submit" className="btn btn-outline-success"><HiSaveAs size={20}/> Cari</button>

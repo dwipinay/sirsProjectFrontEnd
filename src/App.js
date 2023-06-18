@@ -138,7 +138,7 @@ import RL54 from "./components/RL54/RL54.js"
 
 function App() {
   return (
-    <BrowserRouter basename={'/sirs'}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/beranda" element={<><NavigationBar/></>} />
