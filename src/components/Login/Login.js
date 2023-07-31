@@ -33,7 +33,7 @@ const Login = () => {
             localStorage.setItem('name', results.data.data.name)
             navigate("/beranda")
         } catch (error) {
-            reCaptchaReference.current.reset()
+            // reCaptchaReference.current.reset()
             if(error.response) {
                 toast(error.response.data.message, {
                     position: toast.POSITION.TOP_RIGHT
