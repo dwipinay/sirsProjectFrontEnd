@@ -5,6 +5,7 @@ import NavigationBar from "./components/NavigationBar/NavigationBar"
 
 // User
 import FormUbahPassword from "./components/User/FormUbahPassword"
+import FormTambahUser from "./components/User/FormTambahUser"
 
 // RL 1.2
 import RL12 from "./components/RL12/RL12.js"
@@ -142,6 +143,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/beranda" element={<><NavigationBar/></>} />
+        <Route path="/user/tambahuser" element={<><NavigationBar/><FormTambahUser/></>}/>
         <Route path="/user/ubahpassword" element={<><NavigationBar/><FormUbahPassword/></>}/>
 
         <Route path="/rl12" element={<><NavigationBar/><RL12/></>}/>

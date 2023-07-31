@@ -130,7 +130,8 @@ const NavigationBar = () => {
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
                         <NavDropdown title={<span style={{color: "gray"}}>{`Login as ${localStorage.getItem('name')}`}</span>} id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/user/ubahpassword">Change Password</NavDropdown.Item>
+                            {/* <NavDropdown.Item as={Link} to="/user/tambahuser">Tambah Pengguna</NavDropdown.Item> */}
+                            <NavDropdown.Item as={Link} to="/user/ubahpassword">Ubah Sandi</NavDropdown.Item>
                             <NavDropdown.Item onClick={Logout}>Log Out</NavDropdown.Item>
                         </NavDropdown>
                     </Navbar.Text>

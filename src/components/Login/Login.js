@@ -6,18 +6,18 @@ import { BoxArrowDownRight} from "react-bootstrap-icons";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import sirsImage from '../Images/sirsImage4.jpeg'
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const reCaptchaReference = useRef(null)
     const navigate = useNavigate()
-    const googleReCaptchaSiteKey = process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY
+    // const googleReCaptchaSiteKey = process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY
 
     const Auth = async(e) => {
         e.preventDefault()
-        const reCaptchaToken = reCaptchaReference.current.getValue()
+        // const reCaptchaToken = reCaptchaReference.current.getValue()
         try {
             const customConfig = {
                 headers: {
@@ -26,8 +26,8 @@ const Login = () => {
             } 
             const results = await axios.post('/apisirs/login',{
                 userName: email,
-                password: password,
-                reCaptchaToken: reCaptchaToken
+                password: password
+                // reCaptchaToken: reCaptchaToken
             }, customConfig)
             console.log(results.data.data.name)
             localStorage.setItem('name', results.data.data.name)
@@ -71,11 +71,11 @@ const Login = () => {
                                                 value={password} onChange={(e) => setPassword(e.target.value)}/>
                                             <label htmlFor="floatingPassword">Password</label>
                                         </div>
-                                        <ReCAPTCHA
+                                        {/* <ReCAPTCHA
                                             className="mt-3"
                                             sitekey={googleReCaptchaSiteKey}
                                             ref={reCaptchaReference}
-                                        />
+                                        /> */}
                                         <div className="mt-3">
                                             <ToastContainer />
                                             <button className="btn btn-outline-success"><BoxArrowDownRight/> Login</button>
