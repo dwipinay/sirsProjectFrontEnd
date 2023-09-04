@@ -289,7 +289,7 @@ export const RL53 = () => {
                         <Link to={`/rl53/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
                             {/* <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}></span> */}
                             +
-                    <span style={{color: "white"}}> RL 5.3 10 Besar Penyakit Rawat Jalan</span>
+                    <span style={{color: "white"}}> RL 5.3 10 Besar Penyakit Rawat Inap</span>
                             
                         </Link>
                         
