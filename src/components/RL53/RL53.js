@@ -286,10 +286,13 @@ export const RL53 = () => {
             <div className="row mt-3 mb-3">
                 <div className="col-md-12">
                     {dataRL.length < 10 && (
-                        <Link to={`/rl53/tambah/`} style={{ textDecoration: "none" }}>
-                            <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}></span>
-                            <span style={{ color: "gray" }}>RL 5.3 10 Besar Penyakit Rawat Inap</span>
+                        <Link to={`/rl53/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}></span> */}
+                            +
+                    <span style={{color: "white"}}> RL 5.3 10 Besar Penyakit Rawat Jalan</span>
+                            
                         </Link>
+                        
 
                     )
                     }
@@ -316,10 +319,15 @@ export const RL53 = () => {
                                         </td>
                                         <td style={{ textAlign: "center", verticalAlign: "middle" }}>
                                             <ToastContainer />
-                                            <RiDeleteBin5Fill size={20} onClick={(e) => hapus(value.id)} style={{ color: "gray", cursor: "pointer", marginRight: "5px" }} />
-                                            <Link to={`/rl53/ubah/${value.id}`}>
-                                                <RiEdit2Fill size={20} style={{ color: "gray", cursor: "pointer" }} />
+                                            <div style={{display: "flex"}}>
+                                                    <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => hapus(value.id)}>H</button>
+                                                    
+                                            {/* <RiDeleteBin5Fill size={20} onClick={(e) => hapus(value.id)} style={{ color: "gray", cursor: "pointer", marginRight: "5px" }} /> */}
+                                            <Link to={`/rl53/ubah/${value.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}}>
+                                                U
+                                                {/* <RiEdit2Fill size={20} style={{ color: "gray", cursor: "pointer" }} /> */}
                                             </Link>
+                                            </div>
                                         </td>
                                         <td><input type="text" name="kode_icd_10" className="form-control" value={value.kode_icd_10}
                                             onChange={e => changeHandler(e, index)} disabled={true} />

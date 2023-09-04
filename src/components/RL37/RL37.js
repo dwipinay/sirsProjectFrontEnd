@@ -422,10 +422,12 @@ let groups = [];
           </div>
       </div>
       
-        <Link to={`/rl37/tambah/`} style={{textDecoration: "none"}}>
-            <AiFillFileAdd size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
+        <Link to={`/rl37/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+            {/* <AiFillFileAdd size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span> */}
+            +
+            </Link>
             <span style={{color: "gray"}}>RL 3.7 Radiologi</span>
-        </Link>              
+                  
         <div className="row mt-3 mb-3">
             <div className="col-md-12">
               <div className="container" style={{ textAlign: "center" }}>
@@ -470,7 +472,7 @@ let groups = [];
                               <td>{value2.jenis_kegiatan.no}</td>
                               <td>
                                 <ToastContainer />
-                                <RiDeleteBin5Fill
+                                {/* <RiDeleteBin5Fill
                                   size={20}
                                   onClick={(e) =>
                                     hapus(value2.id, value2.tahun)
@@ -480,13 +482,17 @@ let groups = [];
                                     cursor: "pointer",
                                     marginRight: "5px",
                                   }}
-                                />
-                                <Link to={`/rl37/ubah/${value2.id}`}>
+                                /> */}
+                                <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => hapus(value2.id, value2.tahun)}>H</button>
+                                {/* <Link to={`/rl37/ubah/${value2.id}`}>
                                   <RiEdit2Fill
                                     size={20}
                                     style={{ color: "gray", cursor: "pointer" }}
                                   />
-                                </Link>
+                                </Link> */}
+                                <Link to={`/rl37/ubah/${value2.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}} >
+                                                        U
+                                                    </Link>
                               </td>
                               <td style={{ textAlign: "left" }}>
                                 &emsp;{value2.jenis_kegiatan.nama}

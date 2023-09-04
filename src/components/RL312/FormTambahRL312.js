@@ -336,10 +336,12 @@ const FormTambahRL312 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                        <Link to={`/rl312/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
+                        <Link to={`/rl312/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span> */}
+                            &lt;
+                            </Link>
                             <span style={{color: "gray"}}>RL 3.12 Keluarga Berencana</span>
-                        </Link>
+                        
                         <div className="container" style={{ textAlign: "center" }}>
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}

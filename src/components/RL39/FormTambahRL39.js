@@ -290,13 +290,17 @@ const FormTambahRL39 = () => {
         </div>
         <div className="row mt-3">
           <div className="col-md-12">
-            <Link to={`/rl39`} style={{ textDecoration: "none" }}>
+            {/* <Link to={`/rl39`} style={{ textDecoration: "none" }}>
               <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
               />
               <span style={{ color: "gray" }}>Input Data RL 3.9 Rehab Medik Catatan</span>
-            </Link>
+            </Link> */}
+            <Link to={`/rl39/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          &lt;
+        </Link>
+        <span style={{ color: "gray" }}>Kembali RL 3.9 Rehab Medik Catatan</span>
             <div className="container" style={{ textAlign: "center" }}>
               {/* <h5>test</h5> */}
               {spinner && <Spinner animation="grow" variant="success"></Spinner>}

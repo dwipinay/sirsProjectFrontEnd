@@ -249,9 +249,11 @@ const FormTambahRL12 = () => {
                     <div className="col-md-12">
                         <br>
                         </br>
-                        <Link to={`/rl12`} style={{ textDecoration: "none" }}>
-                            <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}>RL1.2 Indikator Pelayanan Rumah Sakit</span>
+                        <Link to={`/rl12`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                        &lt;
+                            
                         </Link>
+                        <span style={{ color: "gray" }}>RL1.2 Indikator Pelayanan Rumah Sakit</span>
                         <table className={style.rlTable}>
                             <thead>
                                 <tr>

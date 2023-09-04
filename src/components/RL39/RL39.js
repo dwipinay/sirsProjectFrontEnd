@@ -467,7 +467,7 @@ const RL39 = () => {
       </div>
       <div className="row mt-3 mb-3">
         <div className="col-md-12">
-          <Link
+          {/* <Link
             to={`/rl39/tambah/`}
             style={{ textDecoration: "none", display: "flex" }}
           >
@@ -476,7 +476,11 @@ const RL39 = () => {
               style={{ color: "gray", cursor: "pointer" }}
             />
             <span style={{ color: "gray" }}>RL 3.9 Rehab Medik Catatan</span>
+          </Link> */}
+          <Link to={`/rl39/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          +
           </Link>
+            <span style={{ color: "gray" }}>RL 3.9 Rehab Medik Catatan</span>
             <div className="container" style={{ textAlign: "center" }}>
               {/* <h5>test</h5> */}
               {spinner && <Spinner animation="grow" variant="success"></Spinner>}
@@ -527,7 +531,7 @@ const RL39 = () => {
                               <td>{value2.group_jenis_tindakan.no}</td>
                               <td>
                                 <ToastContainer />
-                                <RiDeleteBin5Fill
+                                {/* <RiDeleteBin5Fill
                                   size={20}
                                   onClick={(e) =>
                                     Delete(value2.id, value2.tahun)
@@ -537,15 +541,23 @@ const RL39 = () => {
                                     cursor: "pointer",
                                     marginRight: "5px",
                                   }}
-                                />
-                                {value2.group_jenis_tindakan.id !== 41 &&
+                                /> */}
+                                {/* {value2.group_jenis_tindakan.id !== 41 &&
                                   <Link to={`/rl39/ubah/${value2.id}`}>
                                     <RiEdit2Fill
                                       size={20}
                                       style={{ color: "gray", cursor: "pointer" }}
                                     />
                                   </Link>
-                                }
+                                } */}
+                                <div style={{display: "flex"}}>
+                                  <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => Delete(value2.id)}>H</button>
+                                  {value2.group_jenis_tindakan.id !== 41 &&
+                                  <Link to={`/rl39/ubah/${value2.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}} >
+                                    U
+                                  </Link>
+                                  }
+                                </div>
                                 
                               </td>
                               <td style={{ textAlign: "left" }}>

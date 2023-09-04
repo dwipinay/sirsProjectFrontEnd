@@ -190,10 +190,11 @@ export const FormEditRL311 = () => {
             </div>
         </div>
         <br></br>
-        <Link to={`/rl310/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
-                            <span style={{color: "gray"}}>RL 3.11 Kesehatan Jiwa</span>
+        <Link to={`/rl311/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span> */}
+                            &lt;
                         </Link>
+                        <span style={{color: "gray"}}>RL 3.11 Kesehatan Jiwa</span>
         <div className="row mt-3">
             <div className="col-md-12">
                 <table className={style.rlTable}>

@@ -223,9 +223,14 @@ export const FormUbahRL33 = () => {
         <br></br>
         <div className="row mt-3">
             <div className="col-md-12">
-            <Link to={`/rl33/`} style={{textDecoration: "none"}}>
+            {/* <Link to={`/rl33/`} style={{textDecoration: "none"}}>
                 <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}>RL 3.3 Gigi Mulut</span>
+            </Link> */}
+            <Link to={`/rl33/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/> */}
+                &lt;
             </Link>
+            <span style={{color: "gray"}}>Kembali RL 3.3 Gigi Mulut</span>
             <br></br>
                 <table className={style.rlTable}>
                     <thead>

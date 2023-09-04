@@ -443,15 +443,16 @@ export const FormUbahRL4ASebab = () => {
         </div>
         <div className="row mt-3 mb-3">
           <div className="col-md-12">
-            <Link to={`/rl4asebab/`} style={{ textDecoration: "none" }}>
-              <IoArrowBack
+            <Link to={`/rl4asebab/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+              {/* <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
-              />
-              <span style={{ color: "gray" }}>
-                RL 4A Penyakit Rawat Inap Sebab Luar
-              </span>
+              /> */}
+              &lt;
             </Link>
+              <span style={{ color: "gray" }}>
+              Kembali RL 4A Penyakit Rawat Inap Sebab Luar
+              </span>
             <h6>Detail Penyakit :</h6>
             <h6>No. Jenis Golongan Penyakit : {no}</h6>
             <h6>No. DTD Penyakit : {nodtd}</h6>

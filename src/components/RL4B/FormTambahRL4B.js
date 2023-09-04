@@ -384,11 +384,15 @@ const FormTambahRL4B = () => {
         {/* <Link to={`/rl4bsebab`}>
           <button className="btn btn-outline-warning">BACK</button>
         </Link> */}
-        <Link to={`/rl4b`} style={{ textDecoration: "none" }}>
+        {/* <Link to={`/rl4b`} style={{ textDecoration: "none" }}>
           <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} />
           <span style={{ color: "gray" }}>INPUT DATA RL 4B</span>
-        </Link>
+        </Link> */}
         <div className="col-md-6">
+        <Link to={`/rl4b/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          &lt;
+        </Link>
+        <span style={{ color: "gray" }}>Kembali RL 4B Penyakit Rawat Jalan</span>
           <div className="card">
             <div className="card-body">
               <h5 className="card-title h5">

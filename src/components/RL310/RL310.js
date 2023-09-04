@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import Spinner from "react-bootstrap/esm/Spinner";
 
 
+
 const RL310 = () => {
     const [tahun, setTahun] = useState('')
     const [namaRS, setNamaRS] = useState('')
@@ -278,10 +279,15 @@ const RL310 = () => {
                 </div>
             </div>
             <br></br>
-            <Link to={`/rl310/tambah/`} style={{ textDecoration: "none", display: "flex" }}>
-                <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} />
-                <span style={{ color: "gray" }}>RL 3.10 Pelayanan Khusus</span>
+            <div className="col-md-12">
+            <Link to={`/rl310/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                {/* <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} /> */}
+                +
             </Link>
+            <span style={{ color: "gray" }}>RL 3.10 Pelayanan Khusus</span>
+            </div>
+            
+
             <div className="row mt-3 mb-3">
                 <div className="col-md-12">
                     <table className={style.rlTable}>
@@ -302,9 +308,11 @@ const RL310 = () => {
                                         </td>
                                         <td style={{ textAlign: "center", verticalAlign: "middle" }}>
                                             <ToastContainer />
-                                            <RiDeleteBin5Fill size={20} onClick={(e) => hapus(value.id)} style={{ color: "gray", cursor: "pointer", marginRight: "5px" }} />
-                                            <Link to={`/rl310/edit/${value.id}`}>
-                                                <RiEdit2Fill size={20} style={{ color: "gray", cursor: "pointer" }} />
+                                            {/* <RiDeleteBin5Fill size={20} onClick={(e) => hapus(value.id)} style={{ color: "gray", cursor: "pointer", marginRight: "5px" }} /> */}
+                                            <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => hapus(value.id)}>H</button>
+                                            <Link to={`/rl310/edit/${value.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}}>
+                                                U
+                                                {/* <RiEdit2Fill size={20} style={{ color: "gray", cursor: "pointer" }} /> */}
                                             </Link>
                                         </td>
                                         <td>

@@ -453,13 +453,17 @@ export const FormEditRL4B = () => {
         </div>
         <div className="row mt-3 mb-3">
           <div className="col-md-12">
-            <Link to={`/rl4b/`} style={{ textDecoration: "none" }}>
+            {/* <Link to={`/rl4b/`} style={{ textDecoration: "none" }}>
               <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
               />
               <span style={{ color: "gray" }}>RL 4B Data Keadaan Morbiditas Pasien Rawat Jalan</span>
+            </Link> */}
+            <Link to={`/rl4b/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+              &lt;
             </Link>
+            <span style={{ color: "gray" }}> Kembali RL 4B Penyakit Rawat Jalan</span>
             <h5>UBAH DATA RL 4B</h5>
             <h6>Detail Penyakit</h6>
             <h6>No. Jenis Golongan Penyakit : {no}</h6>

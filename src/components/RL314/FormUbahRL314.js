@@ -254,9 +254,14 @@ export const FormUbahRL314 = () => {
         <br></br>
         <div className="row mt-3">
             <div className="col-md-12">
-            <Link to={`/rl314/`} style={{textDecoration: "none"}}>
+            {/* <Link to={`/rl314/`} style={{textDecoration: "none"}}>
                 <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}>RL 3.14 Rujukan</span>
+            </Link> */}
+            <Link to={`/rl314/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/> */}
+                &lt;
             </Link>
+            <span style={{color: "gray"}}>Kembali RL 3.14 Rujukan</span>
         <h3></h3>
                 <table className={style.rlTable}>
                     <thead>

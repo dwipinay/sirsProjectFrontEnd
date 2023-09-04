@@ -139,7 +139,7 @@ import RL54 from "./components/RL54/RL54.js"
 
 function App() {
   return (
-    <BrowserRouter basename="/sirs">
+    <BrowserRouter basename="">
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/beranda" element={<><NavigationBar/></>} />
@@ -249,8 +249,19 @@ function App() {
         <Route path="/rl54" element={<><NavigationBar/><RL54/></>}/>
         <Route path="/rl54/tambah" element={<><NavigationBar/><FormTambahRL54/></>}/>
         <Route path="/rl54/ubah/:id" element={<><NavigationBar/><FormUbahRL54/></>}/>
+
+        <Route path="*" element={<PageNotFound />} status={404}/>
       </Routes>
     </BrowserRouter>
+  );
+}
+
+function PageNotFound() {
+  return (
+    <div className="container mt-3">
+      <h3>404 page not found</h3>
+      <p>We are sorry but the page you are looking for does not exist.</p>
+    </div>
   );
 }
 

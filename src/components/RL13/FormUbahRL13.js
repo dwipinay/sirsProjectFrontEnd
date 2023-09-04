@@ -294,10 +294,13 @@ const FormUbahRL31 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                        <Link to={`/rl13/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/>
-                            <span style={{color: "gray"}}>RL 1.3 Tempat Tidur</span>
+                        <Link to={`/rl13/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"white",cursor: "pointer"}}/> */}
+                            {/* <span style={{color: "gray"}}>RL 1.3 Tempat Tidur</span> */}
+                            &lt;
                         </Link>
+
+                        <span style={{color: "gray"}}>RL 1.3 Tempat Tidur</span>
                         <table className={style.rlTable}>
                             <thead>
                                 <tr>

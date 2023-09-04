@@ -380,10 +380,11 @@ const FormTambahRL31 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                        <Link to={`/rl31/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/>
-                            <span style={{color: "gray"}}>RL 3.1 Rawat Inap</span>
+                        <Link to={`/rl31/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/> */}
+                            &lt;
                         </Link>
+                        <span style={{color: "gray"}}>Kembali RL 3.1 Rawat Inap</span>
                         <Table 
                             className={style.rlTable}
                             striped

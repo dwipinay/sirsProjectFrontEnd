@@ -574,10 +574,12 @@ const RL35 = () => {
                 </div>
                 <div className="row mt-3 mb-3">
                     <div className="col-md-12">
-                        <Link to={`/rl35/tambah/`} style={{textDecoration: "none"}}>
-                            <AiFillFileAdd size={30} style={{color:"gray",cursor: "pointer"}}/>
-                            <span style={{color:"gray"}}>RL 3.5 -  Perinatologi</span>
+                        <Link to={`/rl35/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <AiFillFileAdd size={30} style={{color:"gray",cursor: "pointer"}}/>
+                            <span style={{color:"gray"}}>RL 3.5 -  Perinatologi</span> */}
+                            +
                         </Link>
+                        <span style={{color:"gray"}}>RL 3.5 -  Perinatologi</span>
                         <div className="container" style={{ textAlign: "center" }}>
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
@@ -675,7 +677,8 @@ const RL35 = () => {
                                                     </td>
                                                     <td>
                                                     <ToastContainer />
-                                                    <RiDeleteBin5Fill
+                                                    
+                                                    {/* <RiDeleteBin5Fill
                                                         size={20}
                                                         onClick={(e) =>
                                                         hapus(value2.id, value2.tahun)
@@ -685,14 +688,14 @@ const RL35 = () => {
                                                         cursor: "pointer",
                                                         marginRight: "5px",
                                                         }}
-                                                    />
+                                                    /> */}
                                                     {value2.jenis_kegiatan.nama !== "Tidak Ada Data" &&
-                                                    <Link to={`/rl35/ubah/${value2.id}`}>
-                                                        <RiEdit2Fill
-                                                        size={20}
-                                                        style={{ color: "gray", cursor: "pointer" }}
-                                                        />
-                                                    </Link>
+                                                    <div style={{display: "flex"}}>
+                                                        <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => hapus(value2.id, value2.tahun)}>H</button>
+                                                        <Link to={`/rl35/ubah/${value2.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}} >
+                                                            U
+                                                        </Link>
+                                                    </div>
                                                     }
                                                     </td>
                                                     {/* <td style={{ textAlign: "left" }}>

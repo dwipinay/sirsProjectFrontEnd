@@ -283,13 +283,14 @@ const FormTambahRL38 = () => {
         </div>
         <div className="row mt-3">
           <div className="col-md-12">
-            <Link to={`/rl38/`} style={{ textDecoration: "none" }}>
-              <IoArrowBack
+            <Link to={`/rl38/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+              {/* <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
-              />
-              <span style={{ color: "gray" }}>RL 3.8 Laboratorium</span>
+              /> */}
+                 &lt;
             </Link>
+              <span style={{ color: "gray" }}>Kembali RL 3.8 Laboratorium</span>
             <Table className={style.rlTable}>
               <thead>
                 <tr>

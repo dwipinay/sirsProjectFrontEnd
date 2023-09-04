@@ -444,13 +444,14 @@ export const FormUbahRL4A = () => {
         </div>
         <div className="row mt-3 mb-3">
           <div className="col-md-12">
-            <Link to={`/rl4a/`} style={{ textDecoration: "none" }}>
-              <IoArrowBack
+            <Link to={`/rl4a/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+              {/* <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
-              />
-              <span style={{ color: "gray" }}>RL 4A Penyakit Rawat Inap</span>
+              /> */}
+              &lt;
             </Link>
+              <span style={{ color: "gray" }}> Kembali RL 4A Penyakit Rawat Inap</span>
             <h6>Detail Penyakit :</h6>
             <h6>No. Jenis Golongan Penyakit : {no}</h6>
             <h6>No. DTD Penyakit : {nodtd}</h6>

@@ -455,14 +455,18 @@ export const FormEditRL4BSebab = () => {
         </div>
         <div className="row mt-3 mb-3">
           <div className="col-md-12">
-            <Link to={`/rl4bsebab/`} style={{ textDecoration: "none" }}>
+            {/* <Link to={`/rl4bsebab/`} style={{ textDecoration: "none" }}>
               <IoArrowBack
                 size={30}
                 style={{ color: "gray", cursor: "pointer" }}
               />
               <span style={{ color: "gray" }}>RL 4 B Data Keadaan Morbiditas Pasien Rawat Jalan Rumah Sakit
               Penyebab Kecelakaan</span>
+            </Link> */}
+            <Link to={`/rl4bsebab/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+              &lt;
             </Link>
+            <span style={{ color: "gray" }}> Kembali RL 4B Penyakit Rawat Jalan Sebab Luar</span>
             <h5>UBAH DATA RL 4B Sebab</h5>
             <h6>Detail Penyakit</h6>
             <h6>No. Jenis Golongan Penyakit : {no}</h6>

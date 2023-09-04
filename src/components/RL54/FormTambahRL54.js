@@ -337,10 +337,12 @@ setSpinner(false)
                 <div className="row mt-3">
                     <div className="col-md-12">
                     
-                        <Link to={`/rl54/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
+                        <Link to={`/rl54/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span> */}
+                            &lt;
+                            </Link>
                             <span style={{color: "gray"}}>RL 5.4 10 Besar Penyakit Rawat Jalan</span>
-                        </Link>
+                        
                         <div className="container" style={{ textAlign: "center" }}>
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}

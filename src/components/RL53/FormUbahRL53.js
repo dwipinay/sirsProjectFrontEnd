@@ -258,9 +258,10 @@ export const FormUbahRL53 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                        <Link to={`/rl53/`} style={{ textDecoration: "none" }}>
-                            <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}></span>
-                            <span style={{ color: "gray" }}>RL 5.3 10 Besar Penyakit Rawat Inap</span>
+                        <Link to={`/rl53/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} /><span style={{ color: "gray" }}></span> */}
+                            &lt;
+                            <span style={{ color: "white" }}> RL 5.3 10 Besar Penyakit Rawat Inap</span>
                         </Link>
                         <Table className={style.rlTable}>
                             <thead>

@@ -278,7 +278,7 @@ const RL4BSebab = () => {
       </div>
       <div className="row mt-3 mb-3">
         <div className="col-md-12">
-          <Link
+          {/* <Link
             to={`/rl4bsebab/tambah/`}
             style={{ textDecoration: "none", display: "flex" }}
           >
@@ -290,7 +290,12 @@ const RL4BSebab = () => {
               RL 4 B Data Keadaan Morbiditas Pasien Rawat Jalan Rumah Sakit
               Penyebab Kecelakaan
             </span>
+          </Link> */}
+          <Link to={`/rl4bsebab/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          +
           </Link>
+            <span style={{ color: "gray" }}>RL 4 B Data Keadaan Morbiditas Pasien Rawat Jalan Rumah Sakit
+              Penyebab Kecelakaan</span>
           <div className="container" style={{ textAlign: "center" }}>
                         {/* <h5>test</h5> */}
                         {spinner && <Spinner animation="grow" variant="success"></Spinner>}
@@ -359,7 +364,7 @@ const RL4BSebab = () => {
                       <label>{index + 1}</label>
                     </td>
                     <td>
-                      <ToastContainer />
+                      {/* <ToastContainer />
                       <RiDeleteBin5Fill
                         size={20}
                         onClick={(e) => Delete(value.id)}
@@ -374,7 +379,14 @@ const RL4BSebab = () => {
                           size={20}
                           style={{ color: "gray", cursor: "pointer" }}
                         />
+                      </Link> */}
+                      <ToastContainer />
+                      <div style={{display: "flex"}}>
+                      <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => Delete(value.id)}>H</button>
+                      <Link to={`/rl4bsebab/ubah/${value.id}`} className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}} >
+                        U
                       </Link>
+                      </div>
                     </td>
                     <td style={{ textAlign: "left" }}>
                       <label>{value.jenis_golongan_sebab_penyakit.nama}</label>

@@ -248,10 +248,12 @@ export const FormUbahRL52 = () => {
                 </div>
                 <div className="row mt-3 mb-3">
                     <div className="col-md-12">
-                        <Link to={`/rl52/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/>
-                            <span style={{color: "gray"}}>Ubah data RL 5.2 -  Kunjungan Rawat Jalan</span>
+                        <Link to={`/rl52/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/>
+                            <span style={{color: "gray"}}>Ubah data RL 5.2 -  Kunjungan Rawat Jalan</span> */}
+                            &lt;
                         </Link>
+                        <span style={{color: "gray"}}>Kembali RL 5.2 -  Kunjungan Rawat Jalan</span>
                         <div className="container" style={{ textAlign: "center" }}>
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}

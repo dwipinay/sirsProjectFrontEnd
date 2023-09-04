@@ -275,9 +275,14 @@ const FormTambahRL32 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                    <Link to={`/rl32/`} style={{textDecoration: "none"}}>
+                    {/* <Link to={`/rl32/`} style={{textDecoration: "none"}}>
                             <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}>RL 3.2 Rawat Darurat</span>
+                        </Link> */}
+                        <Link to={`/rl32/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/> */}
+                            &lt;
                         </Link>
+                        <span style={{color: "gray"}}>Kembali RL 3.2 Rawat Darurat</span>
                         <table className={style.rlTable}>
                             <thead>
                                 <tr>

@@ -28,7 +28,7 @@ const RL12 = () => {
   const [dataRL, setDataRL] = useState([]);
   const [token, setToken] = useState("");
   const [expire, setExpire] = useState("");
-  const [spinner, setSpinner]= useState(false)
+  const [spinner, setSpinner] = useState(false)
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -83,12 +83,12 @@ const RL12 = () => {
           Authorization: `Bearer ${token}`,
         },
       });
-    //  console.log(response.data);
+      //  console.log(response.data);
       setNamaRS(response.data.data[0].nama);
       setAlamatRS(response.data.data[0].alamat);
       setNamaPropinsi(response.data.data[0].propinsi.nama);
       setNamaKabKota(response.data.data[0].kabKota.nama);
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const getDataRLSatuTitikDua = async (event) => {
@@ -140,7 +140,7 @@ const RL12 = () => {
       };
       const results = await axiosJWT.get("/apisirs/rlsatutitikdua", customConfig);
 
-     // console.log(results);
+      // console.log(results);
 
       const rlSatuTitikDuaDetails = results.data.data.map((value) => {
         return value.rl_satu_titik_dua_details;
@@ -154,8 +154,8 @@ const RL12 = () => {
       });
 
       setDataRL(datarlSatuTitikDuaDetails);
-     // console.log(datarlSatuTitikDuaDetails);
-     // console.log(dataRL);
+      // console.log(datarlSatuTitikDuaDetails);
+      // console.log(dataRL);
     } catch (error) {
       console.log(error);
     }
@@ -297,11 +297,13 @@ const RL12 = () => {
       <br></br>
       <Link
         to={`/rl12/tambah/`}
-        style={{ textDecoration: "none", display: "flex" }}
+        className='btn btn-info' style={{ fontSize: "18px", backgroundColor: "#779D9E", color: "#FFFFFF" }}
       >
-        <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} />
-        <span style={{ color: "gray" }}>RL 1.2 Indikator Pelayanan Rumah Sakit</span>
+        {/* <AiFillFileAdd size={30} style={{ color: "gray", cursor: "pointer" }} />
+        <span style={{ color: "gray" }}>RL 1.2 Indikator Pelayanan Rumah Sakit</span> */}
+        +
       </Link>
+      <span style={{ color: "gray" }}>RL 1.2 Indikator Pelayanan Rumah Sakit</span>
       <div className="row mt-3 mb-3">
         <div className="col-md-12">
           <table className={style.rlTable}>
@@ -323,10 +325,13 @@ const RL12 = () => {
                   <tr key={value.id}>
                     <td>
                       <ToastContainer />
-                                    <RiDeleteBin5Fill  size={20} onClick={(e) => hapus(value.id)} style={{color: "gray", cursor: "pointer", marginRight: "5px"}} />
-                                    <Link to={`/rl12/edit/${value.id}`}>
-                                        <RiEdit2Fill size={20} style={{color:"gray",cursor: "pointer"}}/>
-                                    </Link>
+                      <div style={{ display: "flex" }}>
+                      <button className="btn btn-danger" style={{ margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663" }} type='button' onClick={(e) => hapus(value.id)}>H</button>
+                      <Link to={`/rl12/edit/${value.id}`} className='btn btn-warning' style={{ margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color: "#FFFFFF" }}>
+                        U
+                      </Link>
+                      </div>
+
                     </td>
                     <td>
                       <input
@@ -405,7 +410,7 @@ const RL12 = () => {
         {spinner && <Spinner animation="grow" variant="success"></Spinner>}
         {spinner && <Spinner animation="grow" variant="success"></Spinner>}
         {spinner && <Spinner animation="grow" variant="success"></Spinner>}
-    </div>
+      </div>
     </div>
   );
 };

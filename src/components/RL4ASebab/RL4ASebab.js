@@ -297,13 +297,15 @@ const RL4ASebab = () => {
       </div>
       <div className="row mt-3 mb-3">
         <div className="col-md-12">
-          <Link to={`/rl4asebab/tambah/`} style={{ textDecoration: "none" }}>
-            <AiFillFileAdd
+          <Link to={`/rl4asebab/tambah/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          {/* style={{ textDecoration: "none" }}> */}
+            {/* <AiFillFileAdd
               size={30}
               style={{ color: "gray", cursor: "pointer" }}
-            />
-            <span style={{ color: "gray" }}>RL 4A Sebab</span>
+            /> */}
+            +
           </Link>
+            <span style={{ color: "gray" }}>RL 4A Sebab</span>
           <div className="container" style={{ textAlign: "center" }}>
             {/* <h5>test</h5> */}
             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
@@ -372,7 +374,7 @@ const RL4ASebab = () => {
                       <label>{index + 1}</label>
                     </td>
                     <td>
-                      <ToastContainer />
+                      {/* <ToastContainer />
                       <RiDeleteBin5Fill
                         size={20}
                         onClick={(e) => Delete(value.id)}
@@ -387,7 +389,14 @@ const RL4ASebab = () => {
                           size={20}
                           style={{ color: "gray", cursor: "pointer" }}
                         />
+                      </Link> */}
+                      <div style={{display: "flex"}}>
+                      <ToastContainer />
+                      <button className="btn btn-danger" style={{margin: "0 5px 0 0", backgroundColor: "#FF6663", border: "1px solid #FF6663"}} type='button' onClick={(e) => Delete(value.id)}>H</button>
+                      <Link to={`/rl4asebab/ubah/${value.id}`}className='btn btn-warning' style={{margin: "0 5px 0 0", backgroundColor: "#CFD35E", border: "1px solid #CFD35E", color:"#FFFFFF"}} >
+                       U
                       </Link>
+                      </div>
                     </td>
                     <td style={{ textAlign: "left" }}>
                       <label>{value.jenis_gol_sebab_penyakit.nama}</label>

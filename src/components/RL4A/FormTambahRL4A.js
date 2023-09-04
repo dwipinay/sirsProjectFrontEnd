@@ -391,11 +391,13 @@ const FormTambahRL4A = () => {
         </div>
       </div>
       <div className="row mt-3">
-        <Link to={`/rl4a/`} style={{ textDecoration: "none" }}>
-          <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} />
-          <span style={{ color: "gray" }}>RL 4A Penyakit Rawat Inap</span>
-        </Link>
         <div className="col-md-6">
+        <Link to={`/rl4a/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+          {/* <IoArrowBack size={30} style={{ color: "gray", cursor: "pointer" }} /> */}
+          &lt;
+        </Link>
+          <span style={{ color: "gray" }}> 
+          Kembali RL 4A Penyakit Rawat Inap</span>
           <div className="card">
             <div className="card-body">
               <h5 className="card-title h5">Search Nama Penyakit</h5>

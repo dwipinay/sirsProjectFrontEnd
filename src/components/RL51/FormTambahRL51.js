@@ -267,10 +267,12 @@ const FormTambahRL51 = () => {
                 </div>
                 <div className="row mt-3">
                     <div className="col-md-12">
-                        <Link to={`/rl51/`} style={{textDecoration: "none"}}>
-                            <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
-                            <span style={{color:"gray"}}>Tambah data RL 5.1 -  Pengunjung</span>
+                        <Link to={`/rl51/`} className='btn btn-info' style={{fontSize:"18px", backgroundColor: "#779D9E", color: "#FFFFFF"}}>
+                            {/* <IoArrowBack size={30} style={{color:"gray",cursor: "pointer"}}/><span style={{color: "gray"}}></span>
+                            <span style={{color:"gray"}}>Tambah data RL 5.1 -  Pengunjung</span> */}
+                            &lt;
                         </Link> 
+                        <span style={{color:"gray"}}>Kembali RL 5.1 -  Pengunjung</span>
                         <div className="container" style={{ textAlign: "center" }}>
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
                             {spinner && <Spinner animation="grow" variant="success"></Spinner>}
